@@ -38,7 +38,7 @@ class UserController {
 
     @PutMapping("/users/{id}")
     @ResponseBody
-    fun updateCountry(@RequestBody myUser: MyUser, @PathVariable id: Long): ResponseEntity<Any> {
+    fun updateUser(@RequestBody myUser: MyUser, @PathVariable id: Long): ResponseEntity<Any> {
         val userOptional = userRepository.findById(id)
         if (!userOptional.isPresent) return ResponseEntity.notFound().build()
         myUser.id = id

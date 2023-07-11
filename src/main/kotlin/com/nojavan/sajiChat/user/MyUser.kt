@@ -10,5 +10,5 @@ data class MyUser (
     @Column(name = "password") var password: String? = null,
     @Column(name = "fullname") var fullName: String? = null,
     @Column(name = "bio") var bio: String? = null,
-    @Column(name = "image-url") var imageUrl: String? = null
+    @Column(name = "image_url") var imageUrl: String? = null
 )
